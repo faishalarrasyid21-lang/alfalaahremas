@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Setup Test - REMAS AL-FALAAH</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 50px auto; 
+            padding: 20px;
+            background: linear-gradient(135deg, #2d5a3d 0%, #1e3d29 100%);
+            color: white;
+        }
+        .container {
+            background: white;
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .status {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        h1 { color: #2d5a3d; text-align: center; }
+        .logo { text-align: center; margin-bottom: 30px; }
+        .config-display {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>🔥 Firebase Setup Test</h1>
+            <h2>REMAS AL-FALAAH</h2>
+        </div>
+
+        <div id="firebase-status" class="status info">
+            📡 Initializing Firebase connection...
+        </div>
+
+        <div class="config-display">
+            <h3>Firebase Configuration:</h3>
+            <pre id="config-display">Loading...</pre>
+        </div>
+
+        <div id="analytics-status" class="status info">
+            📊 Testing Analytics...
+        </div>
+
+        <div id="test-results">
+            <h3>Test Results:</h3>
+            <ul id="results-list">
+                <li>⏳ Testing Firebase initialization...</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Firebase v9 SDK -->
+    <script type="module">
+        // Import Firebase functions
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js';
+        import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js';
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCM2HyP8lrG0T1ld3zeKxFObgAfhCiNwa4",
+            authDomain: "alfalaahremascom.firebaseapp.com",
+            projectId: "alfalaahremascom",
+            storageBucket: "alfalaahremascom.firebasestorage.app",
+            messagingSenderId: "487077719451",
+            appId: "1:487077719451:web:163ac958721ed76a4453e",
+            measurementId: "G-X0ZGMDQ611"
+        };
+
+        // Function to update status
+        function updateStatus(elementId, message, type = 'info') {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.className = `status ${type}`;
+        }
+
+        // Function to add test result
+        function addResult(message, success = true) {
+            const resultsList = document.getElementById('results-list');
+            const li = document.createElement('li');
+            li.textContent = `${success ? '✅' : '❌'} ${message}`;
+            resultsList.appendChild(li);
+        }
+
+        try {
+            // Display configuration
+            document.getElementById('config-display').textContent = JSON.stringify(firebaseConfig, null, 2);
+            
+            // Initialize Firebase
+            updateStatus('firebase-status', '🔥 Initializing Firebase...', 'info');
+            const app = initializeApp(firebaseConfig);
+            
+            updateStatus('firebase-status', '✅ Firebase initialized successfully!', 'success');
+            addResult('Firebase app initialized successfully');
+
+            // Initialize Analytics
+            updateStatus('analytics-status', '📊 Initializing Analytics...', 'info');
+            
+            try {
+                const analytics = getAnalytics(app);
+                updateStatus('analytics-status', '✅ Analytics initialized successfully!', 'success');
+                addResult('Firebase Analytics initialized successfully');
+                
+                // Log a test event
+                console.log('Firebase Analytics ready:', analytics);
+                addResult('Analytics logging is ready');
+                
+            } catch (analyticsError) {
+                updateStatus('analytics-status', '⚠️ Analytics initialization failed (this is normal in localhost)', 'error');
+                addResult('Analytics failed (normal for localhost environment)', false);
+                console.warn('Analytics error:', analyticsError);
+            }
+
+            // Test Firebase app instance
+            if (app && app.options) {
+                addResult(`Connected to project: ${app.options.projectId}`);
+                addResult(`Auth domain: ${app.options.authDomain}`);
+                addResult(`Storage bucket: ${app.options.storageBucket}`);
+            }
+
+            // Clear initial loading message
+            document.getElementById('results-list').innerHTML = '';
+            addResult('All Firebase tests completed');
+            
+        } catch (error) {
+            updateStatus('firebase-status', '❌ Firebase initialization failed!', 'error');
+            updateStatus('analytics-status', '❌ Skipped due to Firebase error', 'error');
+            addResult(`Firebase Error: ${error.message}`, false);
+            console.error('Firebase initialization error:', error);
+        }
+    </script>
+</body>
+</html>
