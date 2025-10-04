@@ -1,4 +1,4 @@
- <?php
+<?php
 
 namespace App\Http\Controllers;
 
@@ -48,20 +48,42 @@ class AuthController extends Controller
 
     public function createAdmin()
     {
-        // Check if admin already exists
-        $admin = User::where('email', 'admin@remas.com')->first();
-        
-        if (!$admin) {
-            User::create([
+        // Create multiple admin accounts
+        $adminAccounts = [
+            [
                 'name' => 'Admin REMAS',
                 'email' => 'admin@remas.com',
                 'password' => Hash::make('admin123'),
                 'email_verified_at' => now(),
-            ]);
+            ],
+            [
+                'name' => 'Admin Localhost',
+                'email' => 'admin@localhost.com',
+                'password' => Hash::make('admin123'),
+                'email_verified_at' => now(),
+            ],
+            [
+                'name' => 'Faishal Arrasyid',
+                'email' => 'faishalarrasyid21@gmail.com',
+                'password' => Hash::make('admin123'),
+                'email_verified_at' => now(),
+            ]
+        ];
+
+        $created = 0;
+        foreach ($adminAccounts as $adminData) {
+            $existingAdmin = User::where('email', $adminData['email'])->first();
             
-            return response()->json(['message' => 'Admin user created successfully!']);
+            if (!$existingAdmin) {
+                User::create($adminData);
+                $created++;
+            }
         }
         
-        return response()->json(['message' => 'Admin user already exists!']);
+        if ($created > 0) {
+            return response()->json(['message' => "{$created} admin user(s) created successfully!"]);
+        }
+        
+        return response()->json(['message' => 'All admin users already exist!']);
     }
 }
