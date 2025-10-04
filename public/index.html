@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMAS AL-FALAAH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        :root {
+            --primary-green: #2d5a3d;
+            --secondary-green: #4a7c59;
+            --light-green: #6fa073;
+            --accent-green: #8db38d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: var(--primary-green); box-shadow: 0 2px 10px rgba(45, 90, 61, 0.1);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <img src="images/logo remas.png" alt="REMAS AL-FALAAH" height="40" class="me-2 rounded-circle">
+                REMAS AL-FALAAH
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kegiatan">Kegiatan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#program">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Section -->
+    <section id="home" class="hero-carousel-section" style="position: relative; min-height: 500px; overflow: hidden; margin-top: 56px;">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+            </div>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('images/1.JPG'); background-size: cover; background-position: center 30%; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
+                        <div class="container">
+                            <div class="row align-items-center" style="min-height: 500px;">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title animate__animated animate__fadeInUp" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); animation-delay: 0.2s; font-size: 3.5rem; font-weight: 700;">REMAS AL-FALAAH</h1>
+                                    <p class="hero-subtitle animate__animated animate__fadeInUp" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.4s; font-size: 1.3rem;">
+                                        Membangun Generasi Muslim yang Berkualitas dan Berakhlak Mulia
+                                    </p>
+                                    <a href="#kegiatan" class="btn btn-lg animate__animated animate__fadeInUp" style="background: rgba(45, 90, 61, 0.9); border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation-delay: 0.6s; color: white; padding: 12px 30px; border-radius: 25px;">
+                                        <i class="fas fa-calendar-alt me-2"></i>Lihat Kegiatan
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('images/2.JPG'); background-size: cover; background-position: center 25%; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
+                        <div class="container">
+                            <div class="row align-items-center" style="min-height: 500px;">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title animate__animated animate__fadeInLeft" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-size: 3.5rem; font-weight: 700;">BERSAMA MEMBANGUN</h1>
+                                    <p class="hero-subtitle animate__animated animate__fadeInLeft" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s; font-size: 1.3rem;">
+                                        Organisasi Pemuda Islam Yang Berdedikasi Untuk Masyarakat
+                                    </p>
+                                    <a href="#program" class="btn btn-lg animate__animated animate__fadeInLeft" style="background: rgba(45, 90, 61, 0.9); border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation-delay: 0.4s; color: white; padding: 12px 30px; border-radius: 25px;">
+                                        <i class="fas fa-heart me-2"></i>Lihat Program
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('images/3.JPG'); background-size: cover; background-position: center 35%; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
+                        <div class="container">
+                            <div class="row align-items-center" style="min-height: 500px;">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title animate__animated animate__fadeInRight" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-size: 3.5rem; font-weight: 700;">BERGABUNGLAH</h1>
+                                    <p class="hero-subtitle animate__animated animate__fadeInRight" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s; font-size: 1.3rem;">
+                                        Jadilah Bagian Dari Komunitas Pemuda Muslim Al-Falaah
+                                    </p>
+                                    <a href="#tentang" class="btn btn-lg animate__animated animate__fadeInRight" style="background: rgba(45, 90, 61, 0.9); border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation-delay: 0.4s; color: white; padding: 12px 30px; border-radius: 25px;">
+                                        <i class="fas fa-users me-2"></i>Tentang Kami
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('images/4.JPG'); background-size: cover; background-position: center 40%; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
+                        <div class="container">
+                            <div class="row align-items-center" style="min-height: 500px;">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title animate__animated animate__fadeInUp" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-size: 3.5rem; font-weight: 700;">OLAHRAGA SEHAT</h1>
+                                    <p class="hero-subtitle animate__animated animate__fadeInUp" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s; font-size: 1.3rem;">
+                                        Mengutamakan Kesehatan Jasmani dan Rohani dalam Berkegiatan
+                                    </p>
+                                    <a href="#program" class="btn btn-lg animate__animated animate__fadeInUp" style="background: rgba(45, 90, 61, 0.9); border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation-delay: 0.4s; color: white; padding: 12px 30px; border-radius: 25px;">
+                                        <i class="fas fa-futbol me-2"></i>Lihat Olahraga
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('images/5.JPG'); background-size: cover; background-position: center 30%; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
+                        <div class="container">
+                            <div class="row align-items-center" style="min-height: 500px;">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title animate__animated animate__fadeInLeft" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-size: 3.5rem; font-weight: 700;">SILATURAHMI</h1>
+                                    <p class="hero-subtitle animate__animated animate__fadeInLeft" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s; font-size: 1.3rem;">
+                                        Mempererat Tali Persaudaraan Sesama Pemuda Muslim
+                                    </p>
+                                    <a href="#tentang" class="btn btn-lg animate__animated animate__fadeInLeft" style="background: rgba(45, 90, 61, 0.9); border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation-delay: 0.4s; color: white; padding: 12px 30px; border-radius: 25px;">
+                                        <i class="fas fa-handshake me-2"></i>Bergabung
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <div style="background: rgba(45, 90, 61, 0.8); padding: 15px; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <span class="carousel-control-prev-icon"></span>
+                </div>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <div style="background: rgba(45, 90, 61, 0.8); padding: 15px; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <span class="carousel-control-next-icon"></span>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Kegiatan Section -->
+    <section id="kegiatan" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--primary-green); font-weight: 700;">Kegiatan Terbaru</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" style="border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(45, 90, 61, 0.1);">
+                        <div style="height: 200px; background: linear-gradient(45deg, var(--light-green), var(--accent-green)); display: flex; align-items: center; justify-content: center; border-radius: 15px 15px 0 0;">
+                            <i class="fas fa-calendar-check" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 style="color: var(--primary-green); font-weight: 600;">Takbiran 2025</h5>
+                            <p class="text-muted">Kegiatan Tahunan Remaja Masjid Al-Falaah</p>
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>28 Mar 2025
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" style="border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(45, 90, 61, 0.1);">
+                        <div style="height: 200px; background: linear-gradient(45deg, var(--light-green), var(--accent-green)); display: flex; align-items: center; justify-content: center; border-radius: 15px 15px 0 0;">
+                            <i class="fas fa-futbol" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 style="color: var(--primary-green); font-weight: 600;">Futsal</h5>
+                            <p class="text-muted">Kegiatan olahraga futsal bersama</p>
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>18 Feb 2024
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" style="border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(45, 90, 61, 0.1);">
+                        <div style="height: 200px; background: linear-gradient(45deg, var(--light-green), var(--accent-green)); display: flex; align-items: center; justify-content: center; border-radius: 15px 15px 0 0;">
+                            <i class="fas fa-handshake" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 style="color: var(--primary-green); font-weight: 600;">Riyaan Remaja Masjid Al-Falaah</h5>
+                            <p class="text-muted">Kegiatan silaturahmi dan diskusi</p>
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>09 Oct 2025
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--primary-green); font-weight: 700;">Program Unggulan</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="text-center p-4" style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 100%; background: white;">
+                        <div class="mb-3">
+                            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 15px rgba(45, 90, 61, 0.3);">
+                                <i class="fas fa-book-quran" style="font-size: 2rem; color: white;"></i>
+                            </div>
+                        </div>
+                        <h5 class="fw-bold mb-3" style="color: var(--primary-green);">Kajian</h5>
+                        <p class="text-muted">Kajian keislaman setiap bulan Ramadhan untuk menambah wawasan agama</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="text-center p-4" style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 100%; background: white;">
+                        <div class="mb-3">
+                            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 15px rgba(45, 90, 61, 0.3);">
+                                <i class="fas fa-hands-helping" style="font-size: 2rem; color: white;"></i>
+                            </div>
+                        </div>
+                        <h5 class="fw-bold mb-3" style="color: var(--primary-green);">Aksi Sosial</h5>
+                        <p class="text-muted">Kegiatan bakti sosial untuk membantu masyarakat sekitar</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="text-center p-4" style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 100%; background: white;">
+                        <div class="mb-3">
+                            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 4px 15px rgba(45, 90, 61, 0.3);">
+                                <i class="fas fa-futbol" style="font-size: 2rem; color: white;"></i>
+                            </div>
+                        </div>
+                        <h5 class="fw-bold mb-3" style="color: var(--primary-green);">Olahraga</h5>
+                        <p class="text-muted">Kegiatan olahraga untuk menjaga kesehatan jasmani</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="py-5" style="background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 style="color: var(--primary-green); font-weight: 700;">Tentang Kami</h2>
+                    <p class="lead">REMAS AL-FALAAH adalah organisasi remaja masjid yang berdedikasi untuk mengembangkan potensi generasi muda muslim melalui berbagai kegiatan positif dan islami.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <i class="fas fa-users" style="font-size: 8rem; color: var(--light-green);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-5" style="background-color: white;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="contact-info-card" style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 8px 25px rgba(45, 90, 61, 0.15); border: 1px solid #e9ecef;">
+                        <!-- Header -->
+                        <div class="text-center mb-4">
+                            <div class="contact-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 4px 15px rgba(45, 90, 61, 0.3);">
+                                <i class="fas fa-phone" style="font-size: 1.5rem; color: white;"></i>
+                            </div>
+                            <h3 style="color: var(--primary-green); font-weight: 700; margin-bottom: 0.5rem;">
+                                <i class="fas fa-info-circle me-2"></i>Informasi Lebih Lanjut
+                            </h3>
+                        </div>
+                        
+                        <!-- Contact Details -->
+                        <div class="contact-details">
+                            <!-- WhatsApp -->
+                            <div class="contact-item mb-4">
+                                <h5 style="color: var(--primary-green); font-weight: 600; margin-bottom: 0.75rem;">
+                                    <i class="fab fa-whatsapp me-2" style="color: #25D366;"></i>WhatsApp:
+                                </h5>
+                                <p style="font-size: 1.1rem; color: #333; font-weight: 500; margin-bottom: 0;">
+                                    +62 895 399 750 030
+                                </p>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="contact-item mb-4">
+                                <h5 style="color: var(--primary-green); font-weight: 600; margin-bottom: 0.75rem;">
+                                    <i class="fas fa-envelope me-2" style="color: #EA4335;"></i>Email:
+                                </h5>
+                                <p style="font-size: 1.1rem; color: #333; font-weight: 500; margin-bottom: 0;">
+                                    alfalaah.remas@gmail.com
+                                </p>
+                            </div>
+                            
+                            <!-- WhatsApp Button -->
+                            <div class="text-center mt-4">
+                                <a href="https://wa.me/62895399750030" 
+                                   target="_blank" 
+                                   class="btn btn-lg"
+                                   style="background: linear-gradient(135deg, #25D366, #128C7E); 
+                                          color: white; 
+                                          border: none; 
+                                          border-radius: 50px; 
+                                          padding: 15px 40px; 
+                                          font-weight: 600; 
+                                          text-decoration: none; 
+                                          box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+                                          transition: all 0.3s ease;">
+                                    <i class="fab fa-whatsapp me-2" style="font-size: 1.2rem;"></i>
+                                    Hubungi Kami
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4" style="background: var(--primary-green); color: white;">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 REMAS AL-FALAAH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
