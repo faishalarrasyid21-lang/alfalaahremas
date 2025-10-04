@@ -19,9 +19,9 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: var(--primary-green); box-shadow: 0 2px 10px rgba(45, 90, 61, 0.1);">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); box-shadow: 0 2px 10px rgba(45, 90, 61, 0.1);">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">
+            <a class="navbar-brand fw-bold" href="index.html">
                 <img src="images/logo remas.png" alt="REMAS AL-FALAAH" height="40" class="me-2 rounded-circle">
                 REMAS AL-FALAAH
             </a>
@@ -34,7 +34,7 @@
                         <a class="nav-link active" href="#home">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#kegiatan">Kegiatan</a>
+                        <a class="nav-link" href="kegiatan.html">Kegiatan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#program">Program</a>
@@ -44,6 +44,11 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-sign-in-alt me-2"></i>Login Admin
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -177,7 +182,16 @@
     <!-- Kegiatan Section -->
     <section id="kegiatan" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5" style="color: var(--primary-green); font-weight: 700;">Kegiatan Terbaru</h2>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-8">
+                    <h2 class="mb-0" style="color: var(--primary-green); font-weight: 700;">Kegiatan Terbaru</h2>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="kegiatan.html" class="btn btn-outline-success">
+                        <i class="fas fa-eye me-2"></i>Lihat Semua
+                    </a>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100" style="border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(45, 90, 61, 0.1);">
@@ -187,9 +201,12 @@
                         <div class="card-body">
                             <h5 style="color: var(--primary-green); font-weight: 600;">Takbiran 2025</h5>
                             <p class="text-muted">Kegiatan Tahunan Remaja Masjid Al-Falaah</p>
-                            <small class="text-muted">
-                                <i class="fas fa-calendar me-1"></i>28 Mar 2025
-                            </small>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>28 Mar 2025
+                                </small>
+                                <a href="kegiatan.html" class="btn btn-outline-success btn-sm">Detail</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,9 +218,12 @@
                         <div class="card-body">
                             <h5 style="color: var(--primary-green); font-weight: 600;">Futsal</h5>
                             <p class="text-muted">Kegiatan olahraga futsal bersama</p>
-                            <small class="text-muted">
-                                <i class="fas fa-calendar me-1"></i>18 Feb 2024
-                            </small>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>18 Feb 2024
+                                </small>
+                                <a href="kegiatan.html" class="btn btn-outline-success btn-sm">Detail</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,9 +235,12 @@
                         <div class="card-body">
                             <h5 style="color: var(--primary-green); font-weight: 600;">Riyaan Remaja Masjid Al-Falaah</h5>
                             <p class="text-muted">Kegiatan silaturahmi dan diskusi</p>
-                            <small class="text-muted">
-                                <i class="fas fa-calendar me-1"></i>09 Oct 2025
-                            </small>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>09 Oct 2025
+                                </small>
+                                <a href="kegiatan.html" class="btn btn-outline-success btn-sm">Detail</a>
+                            </div>
                         </div>
                     </div>
                 </div>

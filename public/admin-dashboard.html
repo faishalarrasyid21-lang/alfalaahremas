@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - REMAS AL-FALAAH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        :root {
+            --primary-green: #2d5a3d;
+            --secondary-green: #4a7c59;
+            --light-green: #6fa073;
+            --accent-green: #8db38d;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+            min-height: 100vh;
+            color: white;
+        }
+        .sidebar .nav-link {
+            color: rgba(255,255,255,0.8);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.25rem;
+            transition: all 0.3s ease;
+        }
+        .sidebar .nav-link:hover,
+        .sidebar .nav-link.active {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            transform: translateX(5px);
+        }
+        .main-content {
+            padding: 2rem;
+        }
+        .stats-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: none;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .stats-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        .table-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .demo-alert {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 px-0">
+                <div class="sidebar">
+                    <div class="p-4 text-center border-bottom border-white border-opacity-25">
+                        <img src="images/logo remas.png" alt="REMAS AL-FALAAH" class="rounded-circle mb-2" style="width: 50px; height: 50px;">
+                        <h5 class="mb-0">Admin Panel</h5>
+                        <small class="opacity-75">REMAS AL-FALAAH</small>
+                    </div>
+                    
+                    <nav class="nav flex-column p-3">
+                        <a href="#dashboard" class="nav-link active">
+                            <i class="fas fa-tachometer-alt me-2"></i>Dashboard
+                        </a>
+                        <a href="#kegiatan" class="nav-link">
+                            <i class="fas fa-calendar-alt me-2"></i>Kelola Kegiatan
+                        </a>
+                        <a href="#users" class="nav-link">
+                            <i class="fas fa-users me-2"></i>Pengguna
+                        </a>
+                        <a href="#settings" class="nav-link">
+                            <i class="fas fa-cog me-2"></i>Pengaturan
+                        </a>
+                        <div class="border-top border-white border-opacity-25 my-3"></div>
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home me-2"></i>Kembali ke Website
+                        </a>
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-sign-out-alt me-2"></i>Logout
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 col-lg-10">
+                <div class="main-content">
+                    <!-- Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h1 style="color: var(--primary-green);">Dashboard Admin</h1>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-user-circle me-2"></i>Admin
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#profile"><i class="fas fa-user me-2"></i>Profil</a></li>
+                                <li><a class="dropdown-item" href="#settings"><i class="fas fa-cog me-2"></i>Pengaturan</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Demo Alert -->
+                    <div class="demo-alert">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-info-circle me-3" style="color: #856404; font-size: 1.2rem;"></i>
+                            <div>
+                                <strong>Mode Demo:</strong> Ini adalah versi demo admin panel. Semua data yang ditampilkan adalah contoh. 
+                                Untuk fungsi admin penuh, silakan gunakan aplikasi Laravel.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Statistics Cards -->
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <div class="stats-card">
+                                <div class="stats-icon" style="background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <h3 class="mb-0" style="color: var(--primary-green);">6</h3>
+                                <p class="text-muted mb-0">Total Kegiatan</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <div class="stats-card">
+                                <div class="stats-icon" style="background: linear-gradient(135deg, #28a745, #20c997);">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3 class="mb-0" style="color: var(--primary-green);">3</h3>
+                                <p class="text-muted mb-0">Admin Terdaftar</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <div class="stats-card">
+                                <div class="stats-icon" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h3 class="mb-0" style="color: var(--primary-green);">1.2K</h3>
+                                <p class="text-muted mb-0">Total Pengunjung</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <div class="stats-card">
+                                <div class="stats-icon" style="background: linear-gradient(135deg, #dc3545, #e83e8c);">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3 class="mb-0" style="color: var(--primary-green);">95%</h3>
+                                <p class="text-muted mb-0">Uptime Website</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activities -->
+                    <div class="row">
+                        <div class="col-lg-8 mb-4">
+                            <div class="table-card">
+                                <div class="card-header bg-white border-0 p-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0" style="color: var(--primary-green);">
+                                            <i class="fas fa-calendar-alt me-2"></i>Kegiatan Terbaru
+                                        </h5>
+                                        <button class="btn btn-success btn-sm" disabled>
+                                            <i class="fas fa-plus me-1"></i>Tambah Kegiatan
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Nama Kegiatan</th>
+                                                <th>Tanggal</th>
+                                                <th>Status</th>
+                                                <th>Aksi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-star-and-crescent me-2 text-success"></i>
+                                                        Takbiran 2025
+                                                    </div>
+                                                </td>
+                                                <td>28 Mar 2025</td>
+                                                <td><span class="badge bg-success">Aktif</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-primary me-1" disabled>
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline-danger" disabled>
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-futbol me-2 text-primary"></i>
+                                                        Futsal
+                                                    </div>
+                                                </td>
+                                                <td>18 Feb 2024</td>
+                                                <td><span class="badge bg-secondary">Selesai</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-primary me-1" disabled>
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline-danger" disabled>
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-handshake me-2 text-info"></i>
+                                                        Riyaan Remaja Masjid Al-Falaah
+                                                    </div>
+                                                </td>
+                                                <td>09 Oct 2025</td>
+                                                <td><span class="badge bg-warning">Draft</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-primary me-1" disabled>
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline-danger" disabled>
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-4">
+                            <div class="table-card">
+                                <div class="card-header bg-white border-0 p-4">
+                                    <h5 class="mb-0" style="color: var(--primary-green);">
+                                        <i class="fas fa-user-shield me-2"></i>Admin Accounts
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3 p-2 rounded" style="background-color: #f8f9fa;">
+                                        <div class="avatar me-3" style="width: 40px; height: 40px; background: var(--primary-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-0">Admin REMAS</h6>
+                                            <small class="text-muted">admin@remas.com</small>
+                                        </div>
+                                        <span class="badge bg-success">Online</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3 p-2 rounded" style="background-color: #f8f9fa;">
+                                        <div class="avatar me-3" style="width: 40px; height: 40px; background: var(--secondary-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-0">Admin Local</h6>
+                                            <small class="text-muted">admin@localhost.com</small>
+                                        </div>
+                                        <span class="badge bg-secondary">Offline</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3 p-2 rounded" style="background-color: #f8f9fa;">
+                                        <div class="avatar me-3" style="width: 40px; height: 40px; background: var(--light-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-0">Faishal Arrasyid</h6>
+                                            <small class="text-muted">faishalarrasyid21@gmail.com</small>
+                                        </div>
+                                        <span class="badge bg-secondary">Offline</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="table-card">
+                                <div class="card-header bg-white border-0 p-4">
+                                    <h5 class="mb-0" style="color: var(--primary-green);">
+                                        <i class="fas fa-bolt me-2"></i>Aksi Cepat
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3">
+                                            <button class="btn btn-outline-success w-100 py-3" disabled>
+                                                <i class="fas fa-plus fa-2x mb-2"></i><br>
+                                                <strong>Tambah Kegiatan</strong>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <button class="btn btn-outline-primary w-100 py-3" disabled>
+                                                <i class="fas fa-users fa-2x mb-2"></i><br>
+                                                <strong>Kelola Admin</strong>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <button class="btn btn-outline-info w-100 py-3" disabled>
+                                                <i class="fas fa-chart-bar fa-2x mb-2"></i><br>
+                                                <strong>Lihat Statistik</strong>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <button class="btn btn-outline-warning w-100 py-3" disabled>
+                                                <i class="fas fa-cog fa-2x mb-2"></i><br>
+                                                <strong>Pengaturan</strong>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Sidebar navigation
+        document.querySelectorAll('.sidebar .nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    document.querySelectorAll('.sidebar .nav-link').forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Simple page simulation
+                    const target = this.getAttribute('href').substring(1);
+                    alert(`Mode Demo: Navigasi ke ${target} tidak tersedia dalam versi statis.`);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
