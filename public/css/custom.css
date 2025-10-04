@@ -88,6 +88,33 @@ body {
     overflow: hidden;
 }
 
+.hero-slide {
+    background-attachment: fixed !important;
+    background-position: center 20% !important;
+    position: relative;
+}
+
+/* Specific positioning for each image to show all people */
+.carousel-item:nth-child(1) .hero-slide {
+    background-position: center 30% !important;
+}
+
+.carousel-item:nth-child(2) .hero-slide {
+    background-position: center 25% !important;
+}
+
+.carousel-item:nth-child(3) .hero-slide {
+    background-position: center 35% !important;
+}
+
+.carousel-item:nth-child(4) .hero-slide {
+    background-position: center 40% !important;
+}
+
+.carousel-item:nth-child(5) .hero-slide {
+    background-position: center 30% !important;
+}
+
 .carousel-fade .carousel-item {
     opacity: 0;
     transition: opacity 0.8s ease-in-out;

@@ -19,7 +19,7 @@
         <div class="carousel-inner">
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/1.JPG') }}') center/cover no-repeat; min-height: 500px; display: flex; align-items: center;">
+                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/1.JPG') }}'); background-size: cover; background-position: center bottom; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
                     <div class="container">
                         <div class="row align-items-center" style="min-height: 500px;">
                             <div class="col-lg-8">
@@ -38,7 +38,7 @@
 
             <!-- Slide 2 -->
             <div class="carousel-item">
-                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/2.JPG') }}') center/cover no-repeat; min-height: 500px; display: flex; align-items: center;">
+                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/2.JPG') }}'); background-size: cover; background-position: center bottom; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
                     <div class="container">
                         <div class="row align-items-center" style="min-height: 500px;">
                             <div class="col-lg-8">
@@ -57,7 +57,7 @@
 
             <!-- Slide 3 -->
             <div class="carousel-item">
-                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/3.JPG') }}') center/cover no-repeat; min-height: 500px; display: flex; align-items: center;">
+                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/3.JPG') }}'); background-size: cover; background-position: center bottom; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
                     <div class="container">
                         <div class="row align-items-center" style="min-height: 500px;">
                             <div class="col-lg-8">
@@ -73,40 +73,38 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Slide 4 -->
+            <!-- Slide 4 -->
             <div class="carousel-item">
-                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/4.JPG') }}') center/cover no-repeat; min-height: 500px; display: flex; align-items: center;">
+                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/4.JPG') }}'); background-size: cover; background-position: center bottom; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
                     <div class="container">
                         <div class="row align-items-center" style="min-height: 500px;">
                             <div class="col-lg-8">
-                                <h1 class="hero-title animate__animated animate__fadeInRight" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">BERGABUNGLAH</h1>
-                                <p class="hero-subtitle animate__animated animate__fadeInRight" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s;">
-                                    Jadilah Bagian Dari Komunitas Pemuda Muslim Al-Falaah
+                                <h1 class="hero-title animate__animated animate__fadeInUp" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">OLAHRAGA SEHAT</h1>
+                                <p class="hero-subtitle animate__animated animate__fadeInUp" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s;">
+                                    Mengutamakan Kesehatan Jasmani dan Rohani dalam Berkegiatan
                                 </p>
-                                <a href="#tentang" class="btn btn-primary-custom btn-lg animate__animated animate__fadeInRight" style="background: rgba(45, 90, 61, 0.9); border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation-delay: 0.4s;">
-                                    <i class="fas fa-users me-2"></i>Tentang Kami
+                                <a href="#program" class="btn btn-primary-custom btn-lg animate__animated animate__fadeInUp" style="background: rgba(45, 90, 61, 0.9); border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation-delay: 0.4s;">
+                                    <i class="fas fa-futbol me-2"></i>Lihat Olahraga
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Slide 5 -->
+            <!-- Slide 5 -->
             <div class="carousel-item">
-                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/5.JPG') }}') center/cover no-repeat; min-height: 500px; display: flex; align-items: center;">
+                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/5.JPG') }}'); background-size: cover; background-position: center bottom; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
                     <div class="container">
                         <div class="row align-items-center" style="min-height: 500px;">
                             <div class="col-lg-8">
-                                <h1 class="hero-title animate__animated animate__fadeInRight" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">BERGABUNGLAH</h1>
-                                <p class="hero-subtitle animate__animated animate__fadeInRight" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s;">
-                                    Jadilah Bagian Dari Komunitas Pemuda Muslim Al-Falaah
+                                <h1 class="hero-title animate__animated animate__fadeInLeft" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">SILATURAHMI</h1>
+                                <p class="hero-subtitle animate__animated animate__fadeInLeft" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s;">
+                                    Mempererat Tali Persaudaraan Sesama Pemuda Muslim
                                 </p>
-                                <a href="#tentang" class="btn btn-primary-custom btn-lg animate__animated animate__fadeInRight" style="background: rgba(45, 90, 61, 0.9); border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation-delay: 0.4s;">
-                                    <i class="fas fa-users me-2"></i>Tentang Kami
+                                <a href="#tentang" class="btn btn-primary-custom btn-lg animate__animated animate__fadeInLeft" style="background: rgba(45, 90, 61, 0.9); border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation-delay: 0.4s;">
+                                    <i class="fas fa-handshake me-2"></i>Bergabung
                                 </a>
                             </div>
                         </div>
