@@ -149,12 +149,12 @@
                     </div>
                     <div class="card-body">
                         <p class="mb-2"><strong>WhatsApp:</strong></p>
-                        <p class="mb-3">+62 123 456 789</p>
+                        <p class="mb-3">+62 895 399 750 030</p>
                         
                         <p class="mb-2"><strong>Email:</strong></p>
-                        <p class="mb-3">info@remas-alfalaah.org</p>
+                        <p class="mb-3">alfalaah.remas@gmail.com</p>
                         
-                        <a href="#" class="btn btn-success btn-sm w-100">
+                        <a href="https://wa.me/62895399750030" target="_blank" class="btn btn-success btn-sm w-100">
                             <i class="fab fa-whatsapp me-2"></i>Hubungi Kami
                         </a>
                     </div>
