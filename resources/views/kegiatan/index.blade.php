@@ -70,7 +70,7 @@
 
             <!-- Slide 4 -->
             <div class="carousel-item">
-                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/4.JPG') }}') center/cover no-repeat; min-height: 500px; display: flex; align-items: center;">
+                <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('{{ asset('images/futsal.jpg') }}') center/cover no-repeat; min-height: 500px; display: flex; align-items: center;">
                     <div class="container">
                         <div class="row align-items-center" style="min-height: 500px;">
                             <div class="col-lg-8">

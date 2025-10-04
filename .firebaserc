@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "alfalaahremascom"
+  },
+  "targets": {
+    "alfalaahremascom": {
+      "hosting": {
+        "alfalaahremascom": [
+          "alfalaahremascom"
+        ]
+      }
+    }
+  }
+}
