@@ -94,21 +94,138 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="py-5" style="background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); color: white;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold">Kegiatan REMAS AL-FALAAH</h1>
-                    <p class="lead">Berbagai kegiatan positif dan islami untuk mengembangkan potensi remaja muslim</p>
+    <!-- Hero Carousel Section -->
+    <section class="hero-carousel-section" style="position: relative; min-height: 500px; overflow: hidden;">
+        <div id="kegiatanCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#kegiatanCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#kegiatanCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#kegiatanCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#kegiatanCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#kegiatanCarousel" data-bs-slide-to="4"></button>
+            </div>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('images/1.JPG'); background-size: cover; background-position: center 30%; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
+                        <div class="container">
+                            <div class="row align-items-center" style="min-height: 500px;">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title animate__animated animate__fadeInUp" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); animation-delay: 0.2s; font-size: 3.5rem; font-weight: 700;">KEGIATAN REMAS</h1>
+                                    <p class="hero-subtitle animate__animated animate__fadeInUp" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.4s; font-size: 1.3rem;">
+                                        Ikuti Berbagai Kegiatan Positif dan Bermanfaat Untuk Ummah
+                                    </p>
+                                    <a href="#kegiatan-list" class="btn btn-lg animate__animated animate__fadeInUp" style="background: rgba(45, 90, 61, 0.9); border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation-delay: 0.6s; color: white; padding: 12px 30px; border-radius: 25px;">
+                                        <i class="fas fa-scroll me-2"></i>Lihat Semua Kegiatan
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('images/2.JPG'); background-size: cover; background-position: center 25%; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
+                        <div class="container">
+                            <div class="row align-items-center" style="min-height: 500px;">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title animate__animated animate__fadeInLeft" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-size: 3.5rem; font-weight: 700;">KAJIAN ISLAM</h1>
+                                    <p class="hero-subtitle animate__animated animate__fadeInLeft" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s; font-size: 1.3rem;">
+                                        Mendalami Ilmu Agama Islam Bersama Para Ustadz Terpercaya
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('images/aksi sosial.JPG'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
+                        <div class="container">
+                            <div class="row align-items-center" style="min-height: 500px;">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title animate__animated animate__fadeInRight" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-size: 3.5rem; font-weight: 700;">AKSI SOSIAL</h1>
+                                    <p class="hero-subtitle animate__animated animate__fadeInRight" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s; font-size: 1.3rem;">
+                                        Berbagi Kebaikan dan Membantu Sesama yang Membutuhkan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('images/futsal.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
+                        <div class="container">
+                            <div class="row align-items-center" style="min-height: 500px;">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title animate__animated animate__fadeInUp" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-size: 3.5rem; font-weight: 700;">OLAHRAGA SEHAT</h1>
+                                    <p class="hero-subtitle animate__animated animate__fadeInUp" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s; font-size: 1.3rem;">
+                                        Menjaga Kesehatan Jasmani dengan Kegiatan Olahraga Bersama
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(45, 90, 61, 0.7), rgba(45, 90, 61, 0.7)), url('images/silaturahmu.JPG'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 500px; display: flex; align-items: center;">
+                        <div class="container">
+                            <div class="row align-items-center" style="min-height: 500px;">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title animate__animated animate__fadeInLeft" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-size: 3.5rem; font-weight: 700;">SILATURAHMI</h1>
+                                    <p class="hero-subtitle animate__animated animate__fadeInLeft" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.7); animation-delay: 0.2s; font-size: 1.3rem;">
+                                        Mempererat Tali Persaudaraan Antar Sesama Muslim
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#kegiatanCarousel" data-bs-slide="prev">
+                <div style="background: rgba(45, 90, 61, 0.8); padding: 15px; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <span class="carousel-control-prev-icon"></span>
+                </div>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#kegiatanCarousel" data-bs-slide="next">
+                <div style="background: rgba(45, 90, 61, 0.8); padding: 15px; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <span class="carousel-control-next-icon"></span>
+                </div>
+            </button>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="py-5">
+    <!-- Kegiatan Section -->
+    <section id="kegiatan-list" class="py-5">
         <div class="container">
+            <!-- Admin Info Alert -->
+            <div class="alert alert-info" role="alert">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-info-circle me-3" style="font-size: 1.5rem;"></i>
+                    <div class="flex-grow-1">
+                        <h6 class="alert-heading mb-1">Informasi untuk Admin</h6>
+                        <p class="mb-2">Untuk mengelola kegiatan (tambah, edit, hapus), silakan login sebagai admin.</p>
+                        <a href="login.html" class="btn btn-primary btn-sm me-2">
+                            <i class="fas fa-sign-in-alt me-2"></i>Login Admin
+                        </a>
+                        <a href="admin-kegiatan.html" class="btn btn-success btn-sm">
+                            <i class="fas fa-cog me-2"></i>Kelola Kegiatan
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
             <div class="row">
                 <!-- Kegiatan Cards -->
                 <div class="col-lg-8">

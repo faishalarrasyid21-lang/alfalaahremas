@@ -26,10 +26,8 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             
-            // Check if user intended to go somewhere before login
-            $intended = $request->session()->pull('url.intended', route('kegiatan.index'));
-            
-            return redirect($intended)->with('success', 'Login berhasil! Selamat datang Admin.');
+            // Redirect to admin dashboard after successful login
+            return redirect()->route('admin.dashboard')->with('success', 'Login berhasil! Selamat datang Admin ' . Auth::user()->name . '.');
         }
 
         return back()->withErrors([

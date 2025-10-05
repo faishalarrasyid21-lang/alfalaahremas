@@ -252,6 +252,22 @@
                                 </li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li>
+                                    <a class="dropdown-item" href="{{ route('admin.dashboard') }}">
+                                        <i class="fas fa-tachometer-alt me-2"></i>Dashboard Admin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('admin.kegiatan') }}">
+                                        <i class="fas fa-calendar-alt me-2"></i>Kelola Kegiatan
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('admin.settings') }}">
+                                        <i class="fas fa-cog me-2"></i>Pengaturan
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
                                     <form method="POST" action="{{ route('logout') }}" class="d-inline">
                                         @csrf
                                         <button type="submit" class="dropdown-item">

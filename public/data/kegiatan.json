@@ -1,0 +1,124 @@
+[
+    {
+        "id": 1,
+        "judul": "Takbiran 2025",
+        "deskripsi": "Kegiatan Tahunan Remaja Masjid Al-Falaah dalam rangka menyambut Hari Raya Idul Fitri dengan berbagai acara menarik dan islami",
+        "tanggal": "2025-03-28",
+        "waktu": "05:00",
+        "lokasi": "Masjid Al-Falaah dan sekitarnya",
+        "google_drive_link": "",
+        "status": "upcoming",
+        "icon": "fas fa-star-and-crescent",
+        "detail_url": "detail-takbiran.html",
+        "full_description": "Takbiran 2025 merupakan kegiatan tahunan yang diselenggarakan oleh REMAS AL-FALAAH dalam rangka menyambut datangnya Hari Raya Idul Fitri. Kegiatan ini bertujuan untuk memeriahkan suasana Hari Raya dan mempererat tali silaturahmi antar anggota REMAS serta masyarakat sekitar.",
+        "activities": [
+            "Takbir keliling di sekitar masjid Al-Falaah",
+            "Sholat Ied berjamaah",
+            "Kultum singkat tentang makna Hari Raya Idul Fitri",
+            "Buka bersama dan silaturahmi",
+            "Pembagian THR untuk anak-anak yatim"
+        ]
+    },
+    {
+        "id": 2,
+        "judul": "Futsal",
+        "deskripsi": "Kegiatan olahraga futsal untuk menjaga kesehatan jasmani sekaligus mempererat tali persaudaraan antar anggota REMAS",
+        "tanggal": "2024-02-18",
+        "waktu": "16:00",
+        "lokasi": "Lapangan Futsal Garuda",
+        "google_drive_link": "",
+        "status": "completed",
+        "icon": "fas fa-futbol",
+        "detail_url": "detail-futsal.html",
+        "full_description": "Futsal REMAS AL-FALAAH merupakan kegiatan olahraga rutin yang bertujuan untuk menjaga kesehatan jasmani anggota REMAS sekaligus mempererat tali persaudaraan. Kegiatan ini dilakukan secara berkala dengan mengundang tim-tim futsal dari masjid sekitar untuk menciptakan kompetisi yang sehat dan sportif.",
+        "activities": [
+            "Menjaga kesehatan jasmani dan kebugaran tubuh",
+            "Mempererat tali silaturahmi antar anggota REMAS",
+            "Mengembangkan sportivitas dan kerjasama tim",
+            "Memberikan hiburan sehat bagi remaja",
+            "Membentuk karakter disiplin dan pantang menyerah"
+        ],
+        "participants": 20
+    },
+    {
+        "id": 3,
+        "judul": "Riyaan Remaja Masjid Al-Falaah",
+        "deskripsi": "Kegiatan silaturahmi dan diskusi untuk mempererat hubungan antar anggota REMAS dan merencanakan program ke depan",
+        "tanggal": "2025-10-09",
+        "waktu": "19:30",
+        "lokasi": "Masjid Al-Falaah",
+        "google_drive_link": "",
+        "status": "draft",
+        "icon": "fas fa-handshake",
+        "detail_url": "detail-riyaan.html",
+        "full_description": "Riyaan Remaja Masjid Al-Falaah adalah kegiatan silaturahmi rutin yang bertujuan untuk mempererat hubungan antar anggota REMAS, berbagi pengalaman, dan merencanakan program-program ke depan yang lebih baik untuk kemajuan organisasi.",
+        "activities": [
+            "Diskusi program kerja REMAS",
+            "Evaluasi kegiatan yang telah berjalan",
+            "Perencanaan kegiatan mendatang",
+            "Sharing pengalaman antar anggota",
+            "Doa bersama untuk kemajuan REMAS"
+        ]
+    },
+    {
+        "id": 4,
+        "judul": "Kajian Rutin",
+        "deskripsi": "Kajian keislaman rutin setiap bulan untuk menambah wawasan agama dan memperkuat iman",
+        "tanggal": "2025-11-15",
+        "waktu": "20:00",
+        "lokasi": "Masjid Al-Falaah",
+        "google_drive_link": "",
+        "status": "upcoming",
+        "icon": "fas fa-book-quran",
+        "detail_url": "detail-kajian.html",
+        "full_description": "Kajian Rutin merupakan kegiatan pendidikan agama Islam yang diselenggarakan setiap bulan untuk meningkatkan pemahaman dan pengamalan ajaran Islam di kalangan remaja masjid.",
+        "activities": [
+            "Ceramah dari ustadz terpercaya",
+            "Diskusi tanya jawab seputar agama",
+            "Tilawah Al-Quran",
+            "Doa bersama",
+            "Makan bersama (ishoma)"
+        ]
+    },
+    {
+        "id": 5,
+        "judul": "Aksi Sosial",
+        "deskripsi": "Kegiatan bakti sosial untuk membantu masyarakat sekitar yang membutuhkan",
+        "tanggal": "2025-12-01",
+        "waktu": "08:00",
+        "lokasi": "Desa Sekitar Masjid",
+        "google_drive_link": "",
+        "status": "upcoming",
+        "icon": "fas fa-hands-helping",
+        "detail_url": "detail-aksi-sosial.html",
+        "full_description": "Aksi Sosial adalah kegiatan kepedulian sosial REMAS AL-FALAAH untuk membantu masyarakat sekitar yang membutuhkan, sebagai bentuk pengamalan nilai-nilai Islam dalam kehidupan bermasyarakat.",
+        "activities": [
+            "Pembagian sembako kepada keluarga kurang mampu",
+            "Bantuan untuk anak yatim",
+            "Gotong royong membersihkan lingkungan",
+            "Santunan untuk janda dan duda",
+            "Pengobatan gratis bersama dokter relawan"
+        ]
+    },
+    {
+        "id": 6,
+        "judul": "Olahraga Bersama",
+        "deskripsi": "Berbagai kegiatan olahraga untuk menjaga kesehatan dan mempererat kebersamaan",
+        "tanggal": "2025-10-20",
+        "waktu": "16:00",
+        "lokasi": "Lapangan Olahraga Sekitar Masjid",
+        "google_drive_link": "",
+        "status": "upcoming",
+        "icon": "fas fa-running",
+        "detail_url": "detail-olahraga.html",
+        "full_description": "Olahraga Bersama adalah kegiatan mingguan yang menggabungkan berbagai jenis olahraga untuk menjaga kesehatan jasmani dan mempererat kebersamaan antar anggota REMAS.",
+        "activities": [
+            "Sepak bola",
+            "Badminton",
+            "Voli",
+            "Jalan sehat",
+            "Senam bersama"
+        ],
+        "frequency": "Mingguan"
+    }
+]

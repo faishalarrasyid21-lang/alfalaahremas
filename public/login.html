@@ -125,18 +125,6 @@
                                 <i class="fas fa-arrow-left me-2"></i>Kembali ke Beranda
                             </a>
                         </div>
-
-                        <!-- Info Admin Accounts -->
-                        <div class="mt-4 p-3" style="background-color: #f8f9fa; border-radius: 10px;">
-                            <h6 style="color: var(--primary-green);">
-                                <i class="fas fa-users me-2"></i>Akun Admin:
-                            </h6>
-                            <small class="text-muted">
-                                • admin@remas.com<br>
-                                • admin@localhost.com<br>
-                                • faishalarrasyid21@gmail.com
-                            </small>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -162,9 +150,9 @@
                 
                 if (validEmails.includes(email.toLowerCase())) {
                     // Simulate successful login
-                    alert('Login berhasil! Mengarahkan ke dashboard admin demo...');
+                    alert('Login berhasil! Mengarahkan ke halaman admin...');
                     setTimeout(() => {
-                        window.location.href = 'admin-dashboard.html';
+                        window.location.href = 'admin-kegiatan.html';
                     }, 1000);
                 } else {
                     alert('Email tidak terdaftar. Silakan gunakan salah satu email admin yang tersedia.');
